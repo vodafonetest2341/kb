@@ -1,7 +1,6 @@
 name: test.infrastructure.access.id
 on:
-  workflow_dispatch:
-    
+  workflow_dispatch:   
 permissions:
   id-token: write
   contents: read
@@ -12,7 +11,6 @@ jobs:
     steps:
       - name: 'Checkout code'
         uses: actions/checkout@v2
-
       - name: 'Az CLI login'
         uses: /opt/actions/azure-login
         with:
