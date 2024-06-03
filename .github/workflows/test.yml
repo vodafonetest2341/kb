@@ -1,6 +1,7 @@
 name: test.infrastructure.access.id
 on:
   workflow_dispatch:
+    
 permissions:
   id-token: write
   contents: read
